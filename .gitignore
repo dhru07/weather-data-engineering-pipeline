@@ -1,0 +1,34 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+airflow-local/.env
+airflow-local/.env.*
+
+# Python environments and cache
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Airflow generated files
+logs/
+airflow-local/logs/
+airflow-local/config/
+airflow-local/plugins/
+
+# Generated pipeline data
+data/raw/
+data/processed/
+
+# IDE files
+.vscode/
+
+# Local Airflow configuration
+config/
+
+!airflow-local/.env.example
